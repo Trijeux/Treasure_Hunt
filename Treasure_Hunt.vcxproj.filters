@@ -21,15 +21,9 @@
     <ClCompile Include="game.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="game_map.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="game.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="game_map.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

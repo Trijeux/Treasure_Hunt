@@ -1,30 +1,42 @@
 #ifndef GAME_H
 #define GAME_H
+#include <array>
 
-#include "game_map.h"
+constexpr int kHeight = 5;
+constexpr int kWidth = 5;
 
 class Game
 {
 public:
-	Game() = default;
+	Game();
 
 	void GameLoop();
+
 protected:
 private:
+	bool end_game_ = false;
+	bool chest_find_ = false;
+	bool valid_pos_ = false;
+	bool retry_ = false;
 
-	GameMap game_map_;
+	int chest_;
+
+	int try_;
 
 	enum class Tile
 	{
 		kNoDig,
 		kNothing,
-		kTreasure,
+		kChest,
 		kMax
 	};
 
-	
-	void ChoicePlayer();
-	void Display();
+	std::array<Tile, kHeight* kWidth> array_map_;
+	int ChoicePlayer(char);
+	bool CheckChest(int,int);
+	void RandChest();
+	void Display() const;
+	void Retry();
 };
 
 #endif // GAME_H
