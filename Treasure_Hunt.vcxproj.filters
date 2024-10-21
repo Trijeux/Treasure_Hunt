@@ -13,6 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Resource Files\asstes">
+      <UniqueIdentifier>{442d331d-98a3-4219-b2a9-51793baf0059}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\asstes\cursor">
+      <UniqueIdentifier>{edd186f3-fc77-4580-acfd-7d7e079bc529}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\asstes\font">
+      <UniqueIdentifier>{22d54901-a3fb-4830-aa80-2828e1592587}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\asstes\sprite">
+      <UniqueIdentifier>{3d209d27-59cf-42ff-9455-6b5c3b6cd396}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cc">
@@ -21,10 +33,38 @@
     <ClCompile Include="game.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="gameSFML.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="game.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="gameSFML.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\cursor\Shovel.png">
+      <Filter>Resource Files\asstes\cursor</Filter>
+    </Image>
+    <Image Include="assets\sprite\Chest.png">
+      <Filter>Resource Files\asstes\sprite</Filter>
+    </Image>
+    <Image Include="assets\sprite\Cross.png">
+      <Filter>Resource Files\asstes\sprite</Filter>
+    </Image>
+    <Image Include="assets\sprite\Sand.png">
+      <Filter>Resource Files\asstes\sprite</Filter>
+    </Image>
+    <Image Include="assets\sprite\Sand_Dige.png">
+      <Filter>Resource Files\asstes\sprite</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="assets\font\Crang.ttf">
+      <Filter>Resource Files\asstes\font</Filter>
+    </Font>
   </ItemGroup>
 </Project>

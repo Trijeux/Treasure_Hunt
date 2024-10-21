@@ -1,8 +1,21 @@
 #include "game.h"
+#include "gameSFML.h"
+
+// ReSharper disable once CppInconsistentNaming
+constexpr bool kSFML = true;
 
 int main()
 {
-    Game game;
+	if (kSFML)
+	{
+		GameSFML game_sfml;
 
-    game.GameLoop();
+		game_sfml.GameLoop();
+	}
+	else
+	{
+		Game game;
+
+		game.GameLoop();
+	}
 }
